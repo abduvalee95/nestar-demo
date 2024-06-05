@@ -13,12 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline/>
-      <Component
-        {
-          ...pageProps /* app ozida mujassam barcha narsani qolgan pages routinga jonatmoqda */
-        }
-      />
-      
+      <Component{...pageProps}/>
     </ThemeProvider>
   );
 }

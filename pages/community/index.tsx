@@ -1,17 +1,15 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
-import { Container } from "@mui/material";
 import { NextPage } from "next";
 import { useState } from "react";
 
 const Community: NextPage = () => {
-  const [title, setTitle] = useState<string>("hello this is Hook");
+  const [title, setTitle] = useState("hello");
   return (
-    <di v>
-      This is Comiunity{" "}
-      <button onClick={() => alert("Hello MIT 8")} style={{ margin: "20px" }}>
-        {" "}
-        Press Me{" "}
-      </button>
+    <div>
+      Community{" "}
+      <button onClick={() => alert("Hello MIT")} style={{ margin: "15px" }}>
+        PressMe
+      </button>{" "}
     </div>
   );
 };
