@@ -1,15 +1,23 @@
-import { useState } from "react"
+import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
+import { Container } from "@mui/material";
+import { NextPage } from "next";
+import { useState } from "react";
 
-const Community = () => {
-    const [title, setTitle] = useState<string>("hello this is Hook")
-    return <div > COMMUNITY
-    <button onClick={()=>alert("Hello MIT 8")} style={{margin:'20px'}}> Press Me </button>
+const Community: NextPage = () => {
+  const [title, setTitle] = useState<string>("hello this is Hook");
+  return (
+    <di v>
+      This is Comiunity{" "}
+      <button onClick={() => alert("Hello MIT 8")} style={{ margin: "20px" }}>
+        {" "}
+        Press Me{" "}
+      </button>
     </div>
-}
+  );
+};
 
-export default Community
+export default withLayoutBasic(Community);
 
-
-//pages router tizimini ishlatishimizni sababi kop companylar aynan pages routerda ishledi 
+//pages router tizimini ishlatishimizni sababi kop companylar aynan pages routerda ishledi
 // mobile web boladi shuni qaysi devicedan kiryatganligni bilish uchun hooklarni ishlatamiz
-//action eventlar talab etiladi Ajail boladi  
+//action eventlar talab etiladi Ajail boladi
