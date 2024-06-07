@@ -43,7 +43,7 @@ const Footer = () => {
             <strong> Keep yourself up to date</strong>
             <div>
               <input type="text" placeholder="Your Email" />
-              <span> subscription </span>
+              <span> Subscribe </span>
             </div>
           </Box>
           <Box component={"div"} className="bottom">
