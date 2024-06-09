@@ -1,0 +1,30 @@
+#pcwrap {
+  #property-list-page {
+    padding-bottom: 40px;
+    background: #f6f6f6;
+    .container {
+      .right {
+        position: absolute;
+        right: 0;
+        top: 4%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 2;
+        button {
+          margin-left: 10px;
+          color: #181a20;
+          font-family: $font;
+          font-size: 14px;
+          font-weight: bold;
+          font-style: normal;
+          line-height: 26px;
+          &:hover {
+            background: none;
+          }
+        }
+      }
+      .property-page{}
+    }
+  }
+}
